@@ -338,7 +338,6 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sdio.sh \
-    init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.syspart_fixup.sh \
     init.qcom.usb.rc \
