@@ -1688,7 +1688,6 @@ vendor/bin/cnss-daemon
 vendor/bin/fstman
 vendor/etc/wifi/fstman.ini
 vendor/etc/wifi/wifi_concurrency_cfg.txt
-vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0_vendor.so
 
 # Wi-Fi Display
 -app/WfdService/WfdService.apk
