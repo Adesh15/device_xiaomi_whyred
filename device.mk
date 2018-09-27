@@ -326,25 +326,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.class_main.sh \
-    init.crda.sh \
     init.goodix.sh \
-    init.mdm.sh \
     init.msm.usb.configfs.rc \
-    init.qcom.class_core.sh \
-    init.qcom.coex.sh \
-    init.qcom.crashdata.sh \
     init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
-    init.qcom.sdio.sh \
     init.qcom.sh \
-    init.qcom.syspart_fixup.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
-    init.qcom.wifi.sh \
-    init.qti.fm.sh \
-    init.qti.ims.sh \
     init.qti.qseecomd.sh \
     init.target.rc \
     ueventd.rc
