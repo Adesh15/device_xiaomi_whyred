@@ -55,11 +55,8 @@ vendor/lib64/libaptX_encoder.so|22f5749edb5099526788c22708099a7791dd837f
 vendor/lib64/libaptXHD_encoder.so|c4ad4d6d7615f7df3ea1a4be5c6dae8a8c8ee8b1
 
 # Audio
-vendor/etc/audio_tuning_mixer.txt
 vendor/etc/drc/drc_cfg_5.1.txt
 vendor/etc/drc/drc_cfg_AZ.txt
-vendor/etc/graphite_ipc_platform_info.xml
-vendor/etc/listen_platform_info.xml
 vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
 vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
 vendor/firmware/dbmd4_va_fw.bin
