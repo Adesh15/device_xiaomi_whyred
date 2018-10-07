@@ -18,7 +18,6 @@
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -136,7 +135,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0
 
 PRODUCT_PACKAGES += \
-    Snap
+    Camera2
 
 # Configstore
 PRODUCT_PACKAGES += \
