@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Mokee Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT := kryo
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
@@ -58,7 +58,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/whyred
-TARGET_KERNEL_CONFIG := whyred-perf_defconfig
+TARGET_KERNEL_CONFIG := whyred_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # QCOM
@@ -153,6 +153,7 @@ TARGET_USES_OVERLAY := true
 USE_OPENGL_RENDERER := true
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
+TARGET_USES_COMMONSYS_DISPLAY_LIBRARY := false
 
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input2/wake_gesture"
@@ -212,10 +213,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-TARGET_RIL_VARIANT := caf
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2018-09-01
+# Ipacm
+USE_DEVICE_SPECIFIC_DATA-IPA-CFG-MGR := true
 
 # Seccomp
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
@@ -228,11 +228,6 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
-
-# TWRP Support
-ifeq ($(WITH_TWRP),true)
--include $(DEVICE_PATH)/twrp.mk
-endif
 
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
