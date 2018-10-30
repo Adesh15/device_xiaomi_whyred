@@ -22,10 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit some common Citrus-CAF stuff.
-$(call inherit-product, vendor/citrus/common.mk)
+# Inherit some common POSP stuff
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
-PRODUCT_NAME := citrus_whyred
+PRODUCT_NAME := potato_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
