@@ -162,7 +162,7 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input2/wake_gesture"
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # FM
-BOARD_HAVE_QCOM_FM := true
+#BOARD_HAVE_QCOM_FM := true
 BOARD_HAS_QCA_FM_SOC := "cherokee"
 
 # GPS
