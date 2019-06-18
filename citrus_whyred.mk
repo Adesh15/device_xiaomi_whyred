@@ -1,5 +1,7 @@
-# 
+#
 # Copyright (C) 2018 The Mokee Project
+# Copyright 2017 Cardinal-AOSP
+# Copyright 2018 Citrus-CAF
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,13 +24,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common Citrus-CAF stuff.
+$(call inherit-product, vendor/citrus/common.mk)
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-PRODUCT_NAME := aosip_whyred
+PRODUCT_NAME := citrus_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
